@@ -22,12 +22,12 @@
 		A1628E1028CA90D300F2BD6B /* MarkPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A1628E0C28CA90D300F2BD6B /* MarkPro-Medium.ttf */; };
 		A1628E1228CA90E900F2BD6B /* customFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1628E1128CA90E900F2BD6B /* customFont.swift */; };
 		A1628E1C28CB1FC400F2BD6B /* FavoritePhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1628E1B28CB1FC400F2BD6B /* FavoritePhotoService.swift */; };
-		A1628E2328CB229F00F2BD6B /* FavoritePhotoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1628E2128CB229F00F2BD6B /* FavoritePhotoModel.xcdatamodeld */; };
 		A1628E2528CB339800F2BD6B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1628E2428CB339800F2BD6B /* Extension.swift */; };
 		A1628E2728CB555C00F2BD6B /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1628E2628CB555C00F2BD6B /* FavoriteViewModel.swift */; };
 		A1628E2F28CB67E800F2BD6B /* FavoritePhoto+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1628E2E28CB67E800F2BD6B /* FavoritePhoto+CoreData.swift */; };
 		A1628E3128CBA1F100F2BD6B /* CellFavoritePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1628E3028CBA1F100F2BD6B /* CellFavoritePhoto.swift */; };
 		A1628E3428CBA23300F2BD6B /* CellFavoritePhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1628E3328CBA23300F2BD6B /* CellFavoritePhotoViewModel.swift */; };
+		A1F16BF628CD6C0A00596FEC /* FavoritePhotoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1F16BF428CD6C0A00596FEC /* FavoritePhotoModel.xcdatamodeld */; };
 		A1F5B5D728C79A0C00191DA5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F5B5D628C79A0C00191DA5 /* NetworkManager.swift */; };
 		A1F5B5DA28C7AB2900191DA5 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F5B5D928C7AB2900191DA5 /* Photo.swift */; };
 		A1F5B5DC28C7E26F00191DA5 /* CellPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F5B5DB28C7E26F00191DA5 /* CellPhoto.swift */; };
@@ -55,12 +55,12 @@
 		A1628E0C28CA90D300F2BD6B /* MarkPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkPro-Medium.ttf"; sourceTree = "<group>"; };
 		A1628E1128CA90E900F2BD6B /* customFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customFont.swift; sourceTree = "<group>"; };
 		A1628E1B28CB1FC400F2BD6B /* FavoritePhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePhotoService.swift; sourceTree = "<group>"; };
-		A1628E2228CB229F00F2BD6B /* UnsplashTestTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UnsplashTestTask.xcdatamodel; sourceTree = "<group>"; };
 		A1628E2428CB339800F2BD6B /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		A1628E2628CB555C00F2BD6B /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 		A1628E2E28CB67E800F2BD6B /* FavoritePhoto+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoritePhoto+CoreData.swift"; sourceTree = "<group>"; };
 		A1628E3028CBA1F100F2BD6B /* CellFavoritePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellFavoritePhoto.swift; sourceTree = "<group>"; };
 		A1628E3328CBA23300F2BD6B /* CellFavoritePhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellFavoritePhotoViewModel.swift; sourceTree = "<group>"; };
+		A1F16BF528CD6C0A00596FEC /* PhotoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhotoModel.xcdatamodel; sourceTree = "<group>"; };
 		A1F5B5D628C79A0C00191DA5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A1F5B5D928C7AB2900191DA5 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		A1F5B5DB28C7E26F00191DA5 /* CellPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPhoto.swift; sourceTree = "<group>"; };
@@ -190,7 +190,7 @@
 				A1628E1B28CB1FC400F2BD6B /* FavoritePhotoService.swift */,
 				A1F5B5E028C7E7AC00191DA5 /* StorageManager.swift */,
 				A1F5B5D628C79A0C00191DA5 /* NetworkManager.swift */,
-				A1628E2128CB229F00F2BD6B /* FavoritePhotoModel.xcdatamodeld */,
+				A1F16BF428CD6C0A00596FEC /* FavoritePhotoModel.xcdatamodeld */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -348,6 +348,7 @@
 				A1F5B5DC28C7E26F00191DA5 /* CellPhoto.swift in Sources */,
 				A1628E2528CB339800F2BD6B /* Extension.swift in Sources */,
 				A1628E2F28CB67E800F2BD6B /* FavoritePhoto+CoreData.swift in Sources */,
+				A1F16BF628CD6C0A00596FEC /* FavoritePhotoModel.xcdatamodeld in Sources */,
 				A1F5B5EB28C7F9FB00191DA5 /* CellPhotoViewModel.swift in Sources */,
 				A156F3F928C752F900DF396C /* AppDelegate.swift in Sources */,
 				A1F5B5D728C79A0C00191DA5 /* NetworkManager.swift in Sources */,
@@ -356,7 +357,6 @@
 				A1628E3128CBA1F100F2BD6B /* CellFavoritePhoto.swift in Sources */,
 				A1F5B5E928C7F9E600191DA5 /* MainPhotoViewModel.swift in Sources */,
 				A13C7ED728C782D4000AF150 /* FavoriteViewController.swift in Sources */,
-				A1628E2328CB229F00F2BD6B /* FavoritePhotoModel.xcdatamodeld in Sources */,
 				A1628E0528C9D8EB00F2BD6B /* DetailViewController.swift in Sources */,
 				A1628E1228CA90E900F2BD6B /* customFont.swift in Sources */,
 				A1628E0728C9D9A900F2BD6B /* DetailViewModel.swift in Sources */,
@@ -593,14 +593,13 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		A1628E2128CB229F00F2BD6B /* FavoritePhotoModel.xcdatamodeld */ = {
+		A1F16BF428CD6C0A00596FEC /* FavoritePhotoModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				A1628E2228CB229F00F2BD6B /* UnsplashTestTask.xcdatamodel */,
+				A1F16BF528CD6C0A00596FEC /* PhotoModel.xcdatamodel */,
 			);
-			currentVersion = A1628E2228CB229F00F2BD6B /* UnsplashTestTask.xcdatamodel */;
-			name = FavoritePhotoModel.xcdatamodeld;
-			path = "../../../Junior App/test WAF/UnsplashTestTask/UnsplashTestTask/FavoritePhotoModel.xcdatamodeld";
+			currentVersion = A1F16BF528CD6C0A00596FEC /* PhotoModel.xcdatamodel */;
+			path = FavoritePhotoModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

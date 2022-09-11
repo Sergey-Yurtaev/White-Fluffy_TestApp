@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="FavoritePhoto" representedClassName="FavoritePhoto" syncable="YES" codeGenerationType="class">
+        <attribute name="authorName" optional="YES" attributeType="String"/>
+        <attribute name="createdDate" optional="YES" attributeType="String"/>
+        <attribute name="downloads" optional="YES" attributeType="String"/>
+        <attribute name="idFavoritePhoto" optional="YES" attributeType="String"/>
+        <attribute name="locationCity" optional="YES" attributeType="String"/>
+        <attribute name="locationCountry" optional="YES" attributeType="String"/>
+        <attribute name="locationName" optional="YES" attributeType="String"/>
+        <attribute name="urlImage" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="FavoritePhoto" positionX="-63" positionY="-18" width="128" height="149"/>
+    </elements>
+</model>

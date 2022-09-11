@@ -8,12 +8,12 @@
 import Foundation
 import CoreData
 
-@objc(FavoritePhoto)
-public class FavoritePhoto: NSManagedObject {}
+@objc(FavoritePhotoModel)
+public class FavoritePhotoModel: NSManagedObject {}
 
-extension FavoritePhoto {
+extension FavoritePhotoModel {
     @nonobjc public class func fetchRequest() -> NSFetchRequest<FavoritePhoto> {
-        return NSFetchRequest<FavoritePhoto>(entityName: "FavoritePhoto")
+        return NSFetchRequest<FavoritePhoto>(entityName: "FavoritePhotoModel")
     }
     
     @NSManaged public var locationCity: String?
