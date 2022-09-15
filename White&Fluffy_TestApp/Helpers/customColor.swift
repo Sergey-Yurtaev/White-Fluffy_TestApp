@@ -8,10 +8,13 @@
 import UIKit
 
 extension UIColor {
-    public static let whiteCustom = UIColor(named: "whiteCustom")
-    public static let backgroundWhiteCuston = UIColor(named: "backgroundWhiteCuston")
-    public static let blackCustom = UIColor(named: "blackCustom")
-    public static let orangeCustom = UIColor(named: "orangeCustom")
-    public static let blueCustom = UIColor(named: "blueCustom")
-    public static let grayCustom = UIColor(named: "grayCustom")
+    
+    private static let missingColor: UIColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
+    
+    public static let whiteCustom = UIColor(named: "whiteCustom") ?? missingColor
+    public static let backgroundWhiteCuston = UIColor(named: "backgroundWhiteCuston") ?? missingColor
+    public static let blackCustom = UIColor(named: "blackCustom") ?? missingColor
+    public static let orangeCustom = UIColor(named: "orangeCustom") ?? missingColor
+    public static let blueCustom = UIColor(named: "blueCustom") ?? missingColor
+    public static let grayCustom = UIColor(named: "grayCustom") ?? missingColor
 }

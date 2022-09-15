@@ -71,7 +71,8 @@ class MainPhotoViewController: UIViewController {
     
     private func setupView() {
         view.backgroundColor = .whiteCustom
-        UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).defaultTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.blueCustom ?? .black]
+        UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).defaultTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.blueCustom]
+        
     }
     
     // MARK: - Selector methods

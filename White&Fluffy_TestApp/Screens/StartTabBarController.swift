@@ -8,13 +8,14 @@
 import UIKit
 
 class StartTabBarController: UITabBarController {
-    
+   
     private let navBar = UINavigationBar()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        generateTabBar()
+
         setTabBarAppearance()
+        generateTabBar()
     }
     
     private func generateTabBar() { 
@@ -32,8 +33,7 @@ class StartTabBarController: UITabBarController {
         let navController = UINavigationController(rootViewController: viewController)
         navController.navigationBar.prefersLargeTitles = false
         viewController.navigationItem.title = title
-        navController.view.backgroundColor = .white
-        navController.tabBarItem.title = title
+        navController.view.backgroundColor = .whiteCustom
         navController.tabBarItem.image = imageName
         return navController
     }
@@ -45,8 +45,18 @@ class StartTabBarController: UITabBarController {
     }
     
     private func setTabBarAppearance() {
-        tabBar.tintColor = UIColor.blueCustom
-        tabBar.unselectedItemTintColor = UIColor.blueCustom
+        
+        if #available(iOS 15, *) {
+            let tabBarAppearance = UITabBarAppearance()
+            tabBarAppearance.backgroundColor = .whiteCustom
+            tabBarAppearance.stackedLayoutAppearance.selected.titleTextAttributes = [.foregroundColor: UIColor.red]
+            tabBarAppearance.stackedLayoutAppearance.normal.titleTextAttributes = [.foregroundColor: UIColor.black]
+            tabBarAppearance.stackedLayoutAppearance.normal.iconColor = UIColor.blueCustom
+            tabBarAppearance.stackedLayoutAppearance.selected.iconColor = UIColor.blueCustom
+            tabBar.standardAppearance = tabBarAppearance
+            tabBar.scrollEdgeAppearance = tabBarAppearance
+        }
+        
     }
 }
 
