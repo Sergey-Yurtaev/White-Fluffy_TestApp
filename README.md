@@ -1,5 +1,7 @@
 # White&Fluffy_TestApp
 
+![Gallery1080-2](https://user-images.githubusercontent.com/69955420/190898620-d26669eb-932e-48c5-b472-bfc3ad346a7f.gif)
+
 ## Installation
 У вас должны быть установлены SPM https://github.com/onevcat/Kingfisher
 
