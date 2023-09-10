@@ -8,7 +8,7 @@
 import UIKit
 import Kingfisher
 
-class DetailViewController: UIViewController {
+final class DetailViewController: UIViewController {
     
     //MARK: Private properties
     var viewModel: DetailViewModelProtocol! {

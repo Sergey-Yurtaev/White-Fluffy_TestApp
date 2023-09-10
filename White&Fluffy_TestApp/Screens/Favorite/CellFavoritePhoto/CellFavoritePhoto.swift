@@ -8,7 +8,7 @@
 import UIKit
 import Kingfisher
 
-class CellFavoritePhoto: UITableViewCell {
+final class CellFavoritePhoto: UITableViewCell {
     
     var viewModel: CellFavoritePhotoViewModelProtocol! {
         didSet {

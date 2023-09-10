@@ -15,7 +15,7 @@ protocol CellFavoritePhotoViewModelProtocol {
     init(photo: Photo)
 }
 
-class CellFavoritePhotoViewModel: CellFavoritePhotoViewModelProtocol {
+final class CellFavoritePhotoViewModel: CellFavoritePhotoViewModelProtocol {
     
     let photo: Photo
     

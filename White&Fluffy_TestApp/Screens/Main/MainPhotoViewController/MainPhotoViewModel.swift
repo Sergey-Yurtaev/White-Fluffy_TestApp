@@ -16,7 +16,7 @@ protocol MainPhotoViewModelProtocol {
     func viewModelForSelectedRow(at indexPath: IndexPath) -> DetailViewModelProtocol?
 }
 
-class MainPhotoViewModel: MainPhotoViewModelProtocol {
+final class MainPhotoViewModel: MainPhotoViewModelProtocol {
 
     var allPhotos: [Photo] = []
     

@@ -14,7 +14,7 @@ protocol CellPhotoViewModelProtocol {
     init(photo: Photo)
 }
 
-class CellPhotoViewModel: CellPhotoViewModelProtocol {
+final class CellPhotoViewModel: CellPhotoViewModelProtocol {
     
     let photo: Photo
     

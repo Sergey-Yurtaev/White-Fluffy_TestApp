@@ -8,7 +8,7 @@
 import Foundation
 import CoreData
 
-class DataStoreManager {
+final class DataStoreManager {
     public static let modelName = "FavoritePhotoModel"
     public static let model: NSManagedObjectModel = {
         let modelURL = Bundle.main.url(forResource: modelName, withExtension: "momd")!

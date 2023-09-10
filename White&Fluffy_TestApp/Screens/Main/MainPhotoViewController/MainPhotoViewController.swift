@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainPhotoViewController: UIViewController {
+final class MainPhotoViewController: UIViewController {
     
     //MARK: Private propertie
     private var viewModel: MainPhotoViewModelProtocol! {
@@ -86,9 +86,8 @@ class MainPhotoViewController: UIViewController {
     }
 }
 
-    // MARK: - UICollectionViewMethods
-extension MainPhotoViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    
+// MARK: - UICollectionViewDataSource
+extension MainPhotoViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         viewModel.numberOfRows()
     }
@@ -100,14 +99,20 @@ extension MainPhotoViewController: UICollectionViewDelegate, UICollectionViewDat
         cell.viewModel = cellViewModel
         return cell
     }
-    
+}
+
+// MARK: - UICollectionViewDelegate
+extension MainPhotoViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let detailVM = viewModel.viewModelForSelectedRow(at: indexPath)
         let detailsVC = DetailViewController()
         navigationController?.pushViewController(detailsVC, animated: true)
         detailsVC.viewModel = detailVM
     }
-    
+}
+
+// MARK: - UICollectionViewDelegate
+extension MainPhotoViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         CGSize(width: view.frame.width, height: 10)
     }
@@ -125,6 +130,7 @@ extension MainPhotoViewController: UICollectionViewDelegate, UICollectionViewDat
     }
 }
 
+// MARK: - UISearchBarDelegate
 extension MainPhotoViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
     }

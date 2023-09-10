@@ -16,7 +16,7 @@ protocol FavoritePhotoServiceProtocol {
     func exportPhoto(result: FavoritePhoto) -> Photo
 }
 
-class FavoritePhotoService: FavoritePhotoServiceProtocol {
+final class FavoritePhotoService: FavoritePhotoServiceProtocol {
     
     // MARK: Properties
     private let managedObjectContext: NSManagedObjectContext

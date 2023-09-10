@@ -16,7 +16,7 @@ protocol FavoriteViewModelProtocol: AnyObject {
     func viewModelForSelectedRow(at indexPath: IndexPath) -> DetailViewModelProtocol?
 }
 
-class FavoriteViewModel: FavoriteViewModelProtocol {
+final class FavoriteViewModel: FavoriteViewModelProtocol {
     
     private let dataStoreManager = DataStoreManager()
     

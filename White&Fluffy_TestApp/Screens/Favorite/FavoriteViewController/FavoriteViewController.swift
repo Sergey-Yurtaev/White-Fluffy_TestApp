@@ -8,7 +8,7 @@
 import UIKit
 import Kingfisher
 
-class FavoriteViewController: UIViewController {
+final class FavoriteViewController: UIViewController {
     
     //MARK: Private properties
     private var viewModel: FavoriteViewModelProtocol!
@@ -37,20 +37,8 @@ class FavoriteViewController: UIViewController {
         tableView.reloadData()
     }
 }
-// MARK: - UITableViewMethods
-extension FavoriteViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.numberOfRows()
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as? CellFavoritePhoto else { fatalError("Unabel to create cell") }
-        cell.backgroundColor = .whiteCustom
-        let cellViewModel = viewModel.cellViewModel(at: indexPath)
-        cell.viewModel = cellViewModel
-        return cell
-    }
-    
+// MARK: - UITableViewDelegate
+extension FavoriteViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120
     }
@@ -62,5 +50,20 @@ extension FavoriteViewController: UITableViewDelegate, UITableViewDataSource {
         let detailsVC = DetailViewController()
         navigationController?.pushViewController(detailsVC, animated: true)
         detailsVC.viewModel = detailVM
+    }
+}
+
+// MARK: - UITableViewDataSource
+extension FavoriteViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        viewModel.numberOfRows()
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as? CellFavoritePhoto else { fatalError("Unabel to create cell") }
+        cell.backgroundColor = .whiteCustom
+        let cellViewModel = viewModel.cellViewModel(at: indexPath)
+        cell.viewModel = cellViewModel
+        return cell
     }
 }

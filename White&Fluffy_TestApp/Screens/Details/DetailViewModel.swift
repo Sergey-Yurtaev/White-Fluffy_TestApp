@@ -21,7 +21,7 @@ protocol DetailViewModelProtocol {
     func addToFavoritePhoto()
 }
 
-class DetailViewModel: DetailViewModelProtocol {
+final class DetailViewModel: DetailViewModelProtocol {
     
     private let dataStoreManager = DataStoreManager()
     var favoritePhotoService: FavoritePhotoServiceProtocol {

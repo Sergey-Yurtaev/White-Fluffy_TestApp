@@ -8,7 +8,7 @@
 import UIKit
 import Kingfisher
 
-class CellPhoto: UICollectionViewCell {
+final class CellPhoto: UICollectionViewCell {
     
     var viewModel: CellPhotoViewModelProtocol! {
         didSet {

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class StartTabBarController: UITabBarController {
+final class StartTabBarController: UITabBarController {
    
     private let navBar = UINavigationBar()
     
@@ -38,11 +38,11 @@ class StartTabBarController: UITabBarController {
         return navController
     }
     
-    private func generateVC(viewController: UIViewController, title: String, image: UIImage?) -> UIViewController {
-        viewController.tabBarItem.title = title
-        viewController.tabBarItem.image = image
-        return viewController
-    }
+//    private func generateVC(viewController: UIViewController, title: String, image: UIImage?) -> UIViewController {
+//        viewController.tabBarItem.title = title
+//        viewController.tabBarItem.image = image
+//        return viewController
+//    }
     
     private func setTabBarAppearance() {
         
