@@ -38,12 +38,6 @@ final class StartTabBarController: UITabBarController {
         return navController
     }
     
-//    private func generateVC(viewController: UIViewController, title: String, image: UIImage?) -> UIViewController {
-//        viewController.tabBarItem.title = title
-//        viewController.tabBarItem.image = image
-//        return viewController
-//    }
-    
     private func setTabBarAppearance() {
         
         if #available(iOS 15, *) {
